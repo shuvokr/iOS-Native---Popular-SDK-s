@@ -15,6 +15,8 @@
 		C813A5262557EFD200B1EB30 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C813A5252557EFD200B1EB30 /* HomeStoryboard.storyboard */; };
 		C813A5292557F04000B1EB30 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C813A5282557F04000B1EB30 /* CategoryViewController.swift */; };
 		C813A52C2557F05800B1EB30 /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C813A52B2557F05800B1EB30 /* CategoryStoryboard.storyboard */; };
+		C813A52F2557F0C000B1EB30 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C813A52E2557F0C000B1EB30 /* OffersViewController.swift */; };
+		C813A5322557F0D100B1EB30 /* OffersStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C813A5312557F0D100B1EB30 /* OffersStoryboard.storyboard */; };
 		C8617C902554048D00AE8CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8617C8F2554048D00AE8CFD /* AppDelegate.swift */; };
 		C8617C922554048D00AE8CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8617C912554048D00AE8CFD /* SceneDelegate.swift */; };
 		C8617C942554048D00AE8CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8617C932554048D00AE8CFD /* ViewController.swift */; };
@@ -32,6 +34,8 @@
 		C813A5252557EFD200B1EB30 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		C813A5282557F04000B1EB30 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		C813A52B2557F05800B1EB30 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
+		C813A52E2557F0C000B1EB30 /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		C813A5312557F0D100B1EB30 /* OffersStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OffersStoryboard.storyboard; sourceTree = "<group>"; };
 		C8617C8C2554048D00AE8CFD /* MartVenue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MartVenue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8617C8F2554048D00AE8CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8617C912554048D00AE8CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				C813A5252557EFD200B1EB30 /* HomeStoryboard.storyboard */,
 				C813A5282557F04000B1EB30 /* CategoryViewController.swift */,
 				C813A52B2557F05800B1EB30 /* CategoryStoryboard.storyboard */,
+				C813A52E2557F0C000B1EB30 /* OffersViewController.swift */,
+				C813A5312557F0D100B1EB30 /* OffersStoryboard.storyboard */,
 			);
 			path = TabBarViewControllers;
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C813A5322557F0D100B1EB30 /* OffersStoryboard.storyboard in Resources */,
 				C813A51E2557E1DE00B1EB30 /* ActionLoginSignUpStoryboard.storyboard in Resources */,
 				C8617C9C2554049100AE8CFD /* LaunchScreen.storyboard in Resources */,
 				C813A52C2557F05800B1EB30 /* CategoryStoryboard.storyboard in Resources */,
@@ -182,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C813A5122557CFC200B1EB30 /* LoginSignUpViewController.swift in Sources */,
+				C813A52F2557F0C000B1EB30 /* OffersViewController.swift in Sources */,
 				C813A51B2557E1BC00B1EB30 /* ActionLoginSignupViewController.swift in Sources */,
 				C813A5292557F04000B1EB30 /* CategoryViewController.swift in Sources */,
 				C8617C942554048D00AE8CFD /* ViewController.swift in Sources */,

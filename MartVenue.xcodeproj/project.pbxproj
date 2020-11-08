@@ -19,6 +19,7 @@
 		C813A5322557F0D100B1EB30 /* OffersStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C813A5312557F0D100B1EB30 /* OffersStoryboard.storyboard */; };
 		C813A5352557F19700B1EB30 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C813A5342557F19700B1EB30 /* AccountViewController.swift */; };
 		C813A5382557F1AA00B1EB30 /* AccountStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C813A5372557F1AA00B1EB30 /* AccountStoryboard.storyboard */; };
+		C813A53C2557F2A400B1EB30 /* TabBarRootStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C813A53B2557F2A400B1EB30 /* TabBarRootStoryboard.storyboard */; };
 		C8617C902554048D00AE8CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8617C8F2554048D00AE8CFD /* AppDelegate.swift */; };
 		C8617C922554048D00AE8CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8617C912554048D00AE8CFD /* SceneDelegate.swift */; };
 		C8617C942554048D00AE8CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8617C932554048D00AE8CFD /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		C813A5312557F0D100B1EB30 /* OffersStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OffersStoryboard.storyboard; sourceTree = "<group>"; };
 		C813A5342557F19700B1EB30 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		C813A5372557F1AA00B1EB30 /* AccountStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountStoryboard.storyboard; sourceTree = "<group>"; };
+		C813A53B2557F2A400B1EB30 /* TabBarRootStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarRootStoryboard.storyboard; sourceTree = "<group>"; };
 		C8617C8C2554048D00AE8CFD /* MartVenue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MartVenue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8617C8F2554048D00AE8CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8617C912554048D00AE8CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 			path = TabBarViewControllers;
 			sourceTree = "<group>";
 		};
+		C813A53A2557F25300B1EB30 /* TabbarRoot */ = {
+			isa = PBXGroup;
+			children = (
+				C813A53B2557F2A400B1EB30 /* TabBarRootStoryboard.storyboard */,
+			);
+			path = TabbarRoot;
+			sourceTree = "<group>";
+		};
 		C8617C832554048D00AE8CFD = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 		C8617C8E2554048D00AE8CFD /* MartVenue */ = {
 			isa = PBXGroup;
 			children = (
+				C813A53A2557F25300B1EB30 /* TabbarRoot */,
 				C813A5202557EF9200B1EB30 /* TabBarViewControllers */,
 				C8617C8F2554048D00AE8CFD /* AppDelegate.swift */,
 				C813A5102557CF0900B1EB30 /* AuthLoginSignup */,
@@ -185,6 +196,7 @@
 				C813A5382557F1AA00B1EB30 /* AccountStoryboard.storyboard in Resources */,
 				C813A5162557CFED00B1EB30 /* LoginSignUpStoryboard.storyboard in Resources */,
 				C8617C972554048D00AE8CFD /* Main.storyboard in Resources */,
+				C813A53C2557F2A400B1EB30 /* TabBarRootStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

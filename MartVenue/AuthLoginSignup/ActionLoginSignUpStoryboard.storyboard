@@ -15,8 +15,21 @@
                     <view key="view" contentMode="scaleToFill" id="EGu-xB-N1z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tju-Go-nNk">
+                                <rect key="frame" x="185.5" y="433" width="43" height="30"/>
+                                <state key="normal" title="LOgIN"/>
+                                <connections>
+                                    <action selector="loginSignupAction:" destination="nDb-at-uWk" eventType="touchUpInside" id="zIb-VN-JNn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qkJ-nn-wMv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tju-Go-nNk" firstAttribute="centerX" secondItem="EGu-xB-N1z" secondAttribute="centerX" id="WAt-2k-55r"/>
+                            <constraint firstItem="Tju-Go-nNk" firstAttribute="centerY" secondItem="EGu-xB-N1z" secondAttribute="centerY" id="mGh-IZ-R6W"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="26c-EN-rwm">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="XmV-oH-AIR">
@@ -25,10 +38,22 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="loginButton" destination="Tju-Go-nNk" id="FPm-kn-j0T"/>
+                        <segue destination="zaW-ND-ZrS" kind="presentation" identifier="segue_id_tabbar_home" modalPresentationStyle="fullScreen" id="UEN-dh-2qc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsO-vi-vmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="989.85507246376824" y="166.74107142857142"/>
+        </scene>
+        <!--sid_tabbar-->
+        <scene sceneID="uQa-F8-fdW">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="sid_tabbar" storyboardName="TabBarRootStoryboard" referencedIdentifier="sid_tabbar" id="zaW-ND-ZrS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRY-RN-IOY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1559" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Ek-kF-3Dq">

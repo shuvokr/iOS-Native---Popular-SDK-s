@@ -26,20 +26,46 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4S-MA-76U">
+                                <rect key="frame" x="20" y="51" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="PH9-S1-r8s"/>
+                                    <constraint firstAttribute="height" constant="30" id="cHA-Ye-dPK"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="lineweight" catalog="system"/>
+                                <connections>
+                                    <action selector="opemSideMenu:" destination="Nej-bE-Ci2" eventType="touchUpInside" id="SfN-bU-a8F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d0Q-ld-qt3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="d0Q-ld-qt3" firstAttribute="trailing" secondItem="9Rc-XB-RhR" secondAttribute="trailing" id="JqY-Cl-pt1"/>
+                            <constraint firstItem="a4S-MA-76U" firstAttribute="leading" secondItem="d0Q-ld-qt3" secondAttribute="leading" constant="20" id="gGg-h6-nto"/>
                             <constraint firstItem="9Rc-XB-RhR" firstAttribute="top" secondItem="d0Q-ld-qt3" secondAttribute="top" id="r0q-qD-gYk"/>
                             <constraint firstItem="9Rc-XB-RhR" firstAttribute="leading" secondItem="d0Q-ld-qt3" secondAttribute="leading" id="vvm-b9-ltN"/>
+                            <constraint firstItem="a4S-MA-76U" firstAttribute="top" secondItem="d0Q-ld-qt3" secondAttribute="top" constant="7" id="wuG-5s-kcZ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="HOME" id="6r3-FR-Olm"/>
+                    <connections>
+                        <segue destination="SY4-P3-Xrc" kind="presentation" identifier="segue_id_side_menu" id="Mg8-HA-fU0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Uw-H3-3vh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="75.669642857142847"/>
+        </scene>
+        <!--sid_side_menu-->
+        <scene sceneID="es8-cG-97c">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SideMenuStoryboard" referencedIdentifier="sid_side_menu" id="SY4-P3-Xrc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBr-a6-Vw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="80"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="81n-Xx-q4N">
@@ -47,6 +73,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bAC-Vz-uS8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ccy-Ab-3RC">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -60,6 +87,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="lineweight" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -8,6 +8,8 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    let sideMenuSegue = "segue_id_side_menu"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +17,10 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func opemSideMenu(_ sender: Any) {
+        self.performSegue(withIdentifier: sideMenuSegue, sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

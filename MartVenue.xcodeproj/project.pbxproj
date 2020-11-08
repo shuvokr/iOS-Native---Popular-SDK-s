@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		C813A5352557F19700B1EB30 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C813A5342557F19700B1EB30 /* AccountViewController.swift */; };
 		C813A5382557F1AA00B1EB30 /* AccountStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C813A5372557F1AA00B1EB30 /* AccountStoryboard.storyboard */; };
 		C813A53C2557F2A400B1EB30 /* TabBarRootStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C813A53B2557F2A400B1EB30 /* TabBarRootStoryboard.storyboard */; };
+		C82E23F725585B0900C82137 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82E23F625585B0900C82137 /* SideMenuViewController.swift */; };
+		C82E23FA25585B1A00C82137 /* SideMenuStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82E23F925585B1A00C82137 /* SideMenuStoryboard.storyboard */; };
 		C8617C902554048D00AE8CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8617C8F2554048D00AE8CFD /* AppDelegate.swift */; };
 		C8617C922554048D00AE8CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8617C912554048D00AE8CFD /* SceneDelegate.swift */; };
 		C8617C942554048D00AE8CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8617C932554048D00AE8CFD /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 		C813A5342557F19700B1EB30 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		C813A5372557F1AA00B1EB30 /* AccountStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountStoryboard.storyboard; sourceTree = "<group>"; };
 		C813A53B2557F2A400B1EB30 /* TabBarRootStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarRootStoryboard.storyboard; sourceTree = "<group>"; };
+		C82E23F625585B0900C82137 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		C82E23F925585B1A00C82137 /* SideMenuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenuStoryboard.storyboard; sourceTree = "<group>"; };
 		C8617C8C2554048D00AE8CFD /* MartVenue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MartVenue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8617C8F2554048D00AE8CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8617C912554048D00AE8CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +78,6 @@
 				A92A6F223A0BCAB5B5B14B4E /* Pods-MartVenue.debug.xcconfig */,
 				AA1DE8E68D46412C83490015 /* Pods-MartVenue.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -92,6 +95,7 @@
 		C813A5202557EF9200B1EB30 /* TabBarViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C82E23F525585AD800C82137 /* SideMenu */,
 				C813A5212557EFBA00B1EB30 /* HomeViewController.swift */,
 				C813A5252557EFD200B1EB30 /* HomeStoryboard.storyboard */,
 				C813A5282557F04000B1EB30 /* CategoryViewController.swift */,
@@ -110,6 +114,15 @@
 				C813A53B2557F2A400B1EB30 /* TabBarRootStoryboard.storyboard */,
 			);
 			path = TabbarRoot;
+			sourceTree = "<group>";
+		};
+		C82E23F525585AD800C82137 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C82E23F625585B0900C82137 /* SideMenuViewController.swift */,
+				C82E23F925585B1A00C82137 /* SideMenuStoryboard.storyboard */,
+			);
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		C8617C832554048D00AE8CFD = {
@@ -221,6 +234,7 @@
 				C813A5262557EFD200B1EB30 /* HomeStoryboard.storyboard in Resources */,
 				C8617C992554049100AE8CFD /* Assets.xcassets in Resources */,
 				C813A5382557F1AA00B1EB30 /* AccountStoryboard.storyboard in Resources */,
+				C82E23FA25585B1A00C82137 /* SideMenuStoryboard.storyboard in Resources */,
 				C813A5162557CFED00B1EB30 /* LoginSignUpStoryboard.storyboard in Resources */,
 				C8617C972554048D00AE8CFD /* Main.storyboard in Resources */,
 				C813A53C2557F2A400B1EB30 /* TabBarRootStoryboard.storyboard in Resources */,
@@ -284,6 +298,7 @@
 				C8617C902554048D00AE8CFD /* AppDelegate.swift in Sources */,
 				C8617C922554048D00AE8CFD /* SceneDelegate.swift in Sources */,
 				C813A5222557EFBA00B1EB30 /* HomeViewController.swift in Sources */,
+				C82E23F725585B0900C82137 /* SideMenuViewController.swift in Sources */,
 				C813A5352557F19700B1EB30 /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

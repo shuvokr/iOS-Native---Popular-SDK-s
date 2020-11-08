@@ -26,9 +26,13 @@
 		C8617C972554048D00AE8CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8617C952554048D00AE8CFD /* Main.storyboard */; };
 		C8617C992554049100AE8CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8617C982554049100AE8CFD /* Assets.xcassets */; };
 		C8617C9C2554049100AE8CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8617C9A2554049100AE8CFD /* LaunchScreen.storyboard */; };
+		C992C7CD2980C43F74DD08D9 /* Pods_MartVenue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E129E0B101B5C4220ED7E2 /* Pods_MartVenue.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00E129E0B101B5C4220ED7E2 /* Pods_MartVenue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MartVenue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92A6F223A0BCAB5B5B14B4E /* Pods-MartVenue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MartVenue.debug.xcconfig"; path = "Target Support Files/Pods-MartVenue/Pods-MartVenue.debug.xcconfig"; sourceTree = "<group>"; };
+		AA1DE8E68D46412C83490015 /* Pods-MartVenue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MartVenue.release.xcconfig"; path = "Target Support Files/Pods-MartVenue/Pods-MartVenue.release.xcconfig"; sourceTree = "<group>"; };
 		C813A5112557CFC100B1EB30 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
 		C813A5152557CFED00B1EB30 /* LoginSignUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSignUpStoryboard.storyboard; sourceTree = "<group>"; };
 		C813A51A2557E1BC00B1EB30 /* ActionLoginSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLoginSignupViewController.swift; sourceTree = "<group>"; };
@@ -57,12 +61,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C992C7CD2980C43F74DD08D9 /* Pods_MartVenue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB6809DD0B00336864C44393 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A92A6F223A0BCAB5B5B14B4E /* Pods-MartVenue.debug.xcconfig */,
+				AA1DE8E68D46412C83490015 /* Pods-MartVenue.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C813A5102557CF0900B1EB30 /* AuthLoginSignup */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +117,8 @@
 			children = (
 				C8617C8E2554048D00AE8CFD /* MartVenue */,
 				C8617C8D2554048D00AE8CFD /* Products */,
+				BB6809DD0B00336864C44393 /* Pods */,
+				E7DBD2D1027C1A7E66DBF9BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +147,14 @@
 			path = MartVenue;
 			sourceTree = "<group>";
 		};
+		E7DBD2D1027C1A7E66DBF9BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00E129E0B101B5C4220ED7E2 /* Pods_MartVenue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8617CA02554049100AE8CFD /* Build configuration list for PBXNativeTarget "MartVenue" */;
 			buildPhases = (
+				DA13EC6E174C90F677727DEB /* [CP] Check Pods Manifest.lock */,
 				C8617C882554048D00AE8CFD /* Sources */,
 				C8617C892554048D00AE8CFD /* Frameworks */,
 				C8617C8A2554048D00AE8CFD /* Resources */,
+				6430BD56C74253B0F121F2E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +228,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6430BD56C74253B0F121F2E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MartVenue/Pods-MartVenue-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MartVenue/Pods-MartVenue-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MartVenue/Pods-MartVenue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA13EC6E174C90F677727DEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MartVenue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C8617C882554048D00AE8CFD /* Sources */ = {
@@ -359,6 +428,7 @@
 		};
 		C8617CA12554049100AE8CFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92A6F223A0BCAB5B5B14B4E /* Pods-MartVenue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -378,6 +448,7 @@
 		};
 		C8617CA22554049100AE8CFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1DE8E68D46412C83490015 /* Pods-MartVenue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

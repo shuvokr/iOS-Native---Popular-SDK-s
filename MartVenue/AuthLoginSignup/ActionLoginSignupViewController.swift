@@ -8,14 +8,20 @@
 import UIKit
 
 class ActionLoginSignupViewController: UIViewController {
+    
+    var navTitle: String = "No Title"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print(navTitle)
     }
     
-
+    @IBAction func goBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

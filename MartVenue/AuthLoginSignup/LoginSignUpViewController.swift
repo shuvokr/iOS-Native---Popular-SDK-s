@@ -14,6 +14,13 @@ class LoginSignUpViewController: UIViewController {
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var signupView: UIView!
     
+    struct AuthInfo {
+        var userId: String?
+        var password: String?
+    }
+    private var authInfo : AuthInfo = AuthInfo(userId: nil, password: nil)
+    
+    let tabHomeNavId = "segue_id_tabbar_home1"
     let idForActionLoginSignUp = "segue_id_action_login_signup"
     var loginOrSignupFlag : Bool = Bool()
 
@@ -30,14 +37,23 @@ class LoginSignUpViewController: UIViewController {
         loginView.layer.borderColor = UIColor(red: 1, green: 0.394, blue: 0.308, alpha: 1).cgColor
         signupView.layer.borderColor = UIColor(red: 1, green: 0.394, blue: 0.308, alpha: 1).cgColor
     }
+    @IBAction func actionPhoneNoTextField(_ sender: UITextField) {
+        authInfo.userId = sender.text
+    }
+    
+    @IBAction func actionPasswordTextField(_ sender: UITextField) {
+        authInfo.password = sender.text
+    }
+    
     
     @IBAction func goBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func actionLogin(_ sender: Any) {
+        print(authInfo)
         loginOrSignupFlag = true // true for login request
-        self.performSegue(withIdentifier: idForActionLoginSignUp, sender: self)
+        self.performSegue(withIdentifier: tabHomeNavId, sender: self)
     }
     
     @IBAction func actionSignUp(_ sender: Any) {
@@ -56,7 +72,7 @@ class LoginSignUpViewController: UIViewController {
             let nextVc = segue.destination as! UINavigationController
             let vc = nextVc.topViewController as! ActionLoginSignupViewController
             
-            vc.navTitle = loginOrSignupFlag ? "Login" : "Sign Up"
+            vc.navTitle = loginOrSignupFlag ? "LOGIN" : "SIGN UP"
         }
     }
 

@@ -250,6 +250,7 @@
 				C8617C892554048D00AE8CFD /* Frameworks */,
 				C8617C8A2554048D00AE8CFD /* Resources */,
 				6430BD56C74253B0F121F2E0 /* [CP] Embed Pods Frameworks */,
+				B8996BDA7D4970A0BB17A158 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -347,6 +348,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MartVenue/Pods-MartVenue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8996BDA7D4970A0BB17A158 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MartVenue/Pods-MartVenue-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MartVenue/Pods-MartVenue-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MartVenue/Pods-MartVenue-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DA13EC6E174C90F677727DEB /* [CP] Check Pods Manifest.lock */ = {

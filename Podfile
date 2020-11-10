@@ -7,5 +7,7 @@ target 'MartVenue' do
 
   # Pods for MartVenue
   pod 'SideMenu'
+  pod 'IQKeyboardManagerSwift'
+  pod 'GoogleSignIn'
 
 end

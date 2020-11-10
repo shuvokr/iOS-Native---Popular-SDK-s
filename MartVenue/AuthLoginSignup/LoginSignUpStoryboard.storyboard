@@ -171,16 +171,36 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1c-6q-mQt">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEA-nL-ECR">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="36"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="LpB-EK-iD2"/>
+                                            <constraint firstAttribute="bottom" secondItem="pEA-nL-ECR" secondAttribute="bottom" id="QS5-76-ptd"/>
+                                            <constraint firstAttribute="trailing" secondItem="pEA-nL-ECR" secondAttribute="trailing" id="boV-O1-Wxw"/>
+                                            <constraint firstItem="pEA-nL-ECR" firstAttribute="leading" secondItem="H1c-6q-mQt" secondAttribute="leading" id="cs2-Lk-fBG"/>
+                                            <constraint firstItem="pEA-nL-ECR" firstAttribute="top" secondItem="H1c-6q-mQt" secondAttribute="top" id="mgq-oy-fGZ"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lk1-9y-hrE">
                                         <rect key="frame" x="0.0" y="44" width="334" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvH-fo-wwB">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="36"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="HvH-fo-wwB" secondAttribute="bottom" id="SLl-Bo-KY5"/>
+                                            <constraint firstAttribute="trailing" secondItem="HvH-fo-wwB" secondAttribute="trailing" id="iM7-lw-MmI"/>
                                             <constraint firstAttribute="height" constant="36" id="jMk-ER-OkR"/>
+                                            <constraint firstItem="HvH-fo-wwB" firstAttribute="leading" secondItem="Lk1-9y-hrE" secondAttribute="leading" id="laE-EI-Zbo"/>
+                                            <constraint firstItem="HvH-fo-wwB" firstAttribute="top" secondItem="Lk1-9y-hrE" secondAttribute="top" id="seX-YV-yL1"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -239,6 +259,7 @@
                     <connections>
                         <outlet property="loginView" destination="2XS-l4-ayL" id="vIf-0k-hLA"/>
                         <outlet property="passwordView" destination="0xE-HH-OYD" id="dl6-RH-FWC"/>
+                        <outlet property="signInButtonGoogle" destination="HvH-fo-wwB" id="w2z-Fk-iwp"/>
                         <outlet property="signupView" destination="r7w-BD-w9a" id="8e4-L2-SUL"/>
                         <outlet property="userIdView" destination="xxa-uH-stF" id="pZD-kK-0xW"/>
                         <segue destination="zsP-F9-f3u" kind="presentation" identifier="segue_id_action_login_signup" modalPresentationStyle="fullScreen" id="b1A-Is-PW0"/>

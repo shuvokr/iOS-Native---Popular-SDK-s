@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class LoginSignUpViewController: UIViewController {
     
@@ -13,6 +14,9 @@ class LoginSignUpViewController: UIViewController {
     @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var signupView: UIView!
+    
+    @IBOutlet weak var signInButtonGoogle: UIButton!
+    
     
     struct AuthInfo {
         var userId: String?
@@ -29,6 +33,7 @@ class LoginSignUpViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         setupView()
+        setupGoogleLoginButton()
     }
     
     func setupView() {
@@ -76,4 +81,35 @@ class LoginSignUpViewController: UIViewController {
         }
     }
 
+}
+
+extension LoginSignUpViewController {
+    func setupGoogleLoginButton() {
+        // Add sign in button
+        
+        signInButtonGoogle.layer.cornerRadius = 4.0
+        signInButtonGoogle.setTitle("Sign in with Google", for: .normal)
+        signInButtonGoogle.setTitleColor(.white, for: .normal)
+        signInButtonGoogle.backgroundColor = .systemRed
+        signInButtonGoogle.addTarget(self, action: #selector(googleSignInButtonTapped(_:)), for: .touchUpInside)
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+                
+        // Register notification to update screen after user successfully signed in
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(userDidSignInGoogle(_:)),
+                                               name: .signInGoogleCompleted,
+                                               object: nil)
+    }
+
+    
+    // MARK:- Button action
+    @objc func googleSignInButtonTapped(_ sender: UIButton) {
+        GIDSignIn.sharedInstance()?.signIn()
+    }
+    
+    // MARK:- Notification
+    @objc private func userDidSignInGoogle(_ notification: Notification) {
+        // Update screen after user successfully signed in
+    }
 }

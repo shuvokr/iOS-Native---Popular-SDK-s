@@ -59,3 +59,10 @@ extension ActionLoginSignupViewController {
         signUpView.layer.borderColor = UIColor(red: 1, green: 0.394, blue: 0.308, alpha: 1).cgColor
     }
 }
+
+/*
+ Client ID
+ 120220857451-eio4thimi47cdmuumir56i11lp817i64.apps.googleusercontent.com
+ iOS URL scheme
+ com.googleusercontent.apps.120220857451-eio4thimi47cdmuumir56i11lp817i64
+ */

@@ -9,6 +9,11 @@ import UIKit
 
 class LoginSignUpViewController: UIViewController {
     
+    @IBOutlet weak var userIdView: UIView!
+    @IBOutlet weak var passwordView: UIView!
+    @IBOutlet weak var loginView: UIView!
+    @IBOutlet weak var signupView: UIView!
+    
     let idForActionLoginSignUp = "segue_id_action_login_signup"
     var loginOrSignupFlag : Bool = Bool()
 
@@ -16,6 +21,14 @@ class LoginSignUpViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupView()
+    }
+    
+    func setupView() {
+        userIdView.layer.borderColor = #colorLiteral(red: 0.7411764706, green: 0.7411764706, blue: 0.7411764706, alpha: 1)
+        passwordView.layer.borderColor = #colorLiteral(red: 0.7411764706, green: 0.7411764706, blue: 0.7411764706, alpha: 1)
+        loginView.layer.borderColor = UIColor(red: 1, green: 0.394, blue: 0.308, alpha: 1).cgColor
+        signupView.layer.borderColor = UIColor(red: 1, green: 0.394, blue: 0.308, alpha: 1).cgColor
     }
     
     @IBAction func goBack(_ sender: Any) {

@@ -11,5 +11,7 @@ target 'MartVenue' do
   pod 'GoogleSignIn'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
 
 end

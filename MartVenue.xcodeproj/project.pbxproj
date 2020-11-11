@@ -46,6 +46,7 @@
 		C8BEBFEB2559AD11003012E7 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8BEBFD92559AD11003012E7 /* Poppins-SemiBoldItalic.ttf */; };
 		C8BEBFEC2559AD11003012E7 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8BEBFDA2559AD11003012E7 /* Poppins-Thin.ttf */; };
 		C8BEBFED2559AD11003012E7 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8BEBFDB2559AD11003012E7 /* Poppins-ExtraLight.ttf */; };
+		C8DDAB81255C40470069C380 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8DDAB80255C40460069C380 /* GoogleService-Info.plist */; };
 		C992C7CD2980C43F74DD08D9 /* Pods_MartVenue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E129E0B101B5C4220ED7E2 /* Pods_MartVenue.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		C8BEBFD92559AD11003012E7 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		C8BEBFDA2559AD11003012E7 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		C8BEBFDB2559AD11003012E7 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		C8DDAB80255C40460069C380 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		C8617C8E2554048D00AE8CFD /* MartVenue */ = {
 			isa = PBXGroup;
 			children = (
+				C8DDAB80255C40460069C380 /* GoogleService-Info.plist */,
 				C82ECCE2255BF28800FC342E /* MartVenue.entitlements */,
 				C8BEBFC82559AC41003012E7 /* SupportingFiles */,
 				C813A53A2557F25300B1EB30 /* TabbarRoot */,
@@ -317,6 +320,7 @@
 				C8BEBFDC2559AD11003012E7 /* Poppins-BlackItalic.ttf in Resources */,
 				C8BEBFE52559AD11003012E7 /* Poppins-ExtraBold.ttf in Resources */,
 				C8BEBFE22559AD11003012E7 /* Poppins-BoldItalic.ttf in Resources */,
+				C8DDAB81255C40470069C380 /* GoogleService-Info.plist in Resources */,
 				C813A5262557EFD200B1EB30 /* HomeStoryboard.storyboard in Resources */,
 				C8BEBFE72559AD11003012E7 /* Poppins-Bold.ttf in Resources */,
 				C8BEBFE82559AD11003012E7 /* Poppins-Regular.ttf in Resources */,
@@ -563,7 +567,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testinggg.shuvo2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testinggg.shuvo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -584,7 +588,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.testinggg.shuvo2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testinggg.shuvo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -9,6 +9,7 @@ import UIKit
 import IQKeyboardManagerSwift
 import GoogleSignIn
 import FBSDKCoreKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         IQKeyboardManager.shared.enable = true
+        
+        // Firebase
+        FirebaseApp.configure()
         
         // Google signin config
         GIDSignIn.sharedInstance().clientID = "120220857451-eio4thimi47cdmuumir56i11lp817i64.apps.googleusercontent.com"

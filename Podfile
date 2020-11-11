@@ -9,5 +9,7 @@ target 'MartVenue' do
   pod 'SideMenu'
   pod 'IQKeyboardManagerSwift'
   pod 'GoogleSignIn'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
 
 end

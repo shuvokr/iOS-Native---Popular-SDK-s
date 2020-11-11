@@ -8,6 +8,7 @@
 import UIKit
 import IQKeyboardManagerSwift
 import GoogleSignIn
+import FBSDKCoreKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,15 +23,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         
+        // Facebook Signin
+        ApplicationDelegate.shared.application(
+            application,
+            didFinishLaunchingWithOptions:
+            launchOptions
+        )
+        
+        
         return true
     }
     
+    // Facebook
+    // Google
     @available(iOS 9.0, *)
     func application(_ app: UIApplication,
                      open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        if (GIDSignIn.sharedInstance().handle(url)) {
+            return true
+        } else if (ApplicationDelegate.shared.application(app, open: url, options: options)) {
+            return true
+        }
 
-        return GIDSignIn.sharedInstance().handle(url)
+        return false
     }
 
     // MARK: UISceneSession Lifecycle

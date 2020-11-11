@@ -172,7 +172,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1c-6q-mQt">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="36"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEA-nL-ECR">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEA-nL-ECR" customClass="FBSDKLoginButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="36"/>
                                                 <state key="normal" title="Button"/>
                                             </button>

@@ -3,10 +3,11 @@
 //  MartVenue
 //
 //  Created by Shuvo on 8/11/20.
-//  https://swiftsenpai.com/development/facebook-login-integration-in-swift/
+//
 
 import UIKit
 import GoogleSignIn
+import FBSDKLoginKit
 
 class LoginSignUpViewController: UIViewController {
     
@@ -34,6 +35,14 @@ class LoginSignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupView()
         setupGoogleLoginButton()
+        
+        // Observe access token changes
+        // This will trigger after successfully login / logout
+        NotificationCenter.default.addObserver(forName: .AccessTokenDidChange, object: nil, queue: OperationQueue.main) { (notification) in
+            
+            // Print out access token
+            print("FB Access Token: \(String(describing: AccessToken.current?.tokenString))")
+        }
     }
     
     func setupView() {

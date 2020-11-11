@@ -68,6 +68,7 @@
 		C813A53B2557F2A400B1EB30 /* TabBarRootStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarRootStoryboard.storyboard; sourceTree = "<group>"; };
 		C82E23F625585B0900C82137 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		C82E23F925585B1A00C82137 /* SideMenuStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenuStoryboard.storyboard; sourceTree = "<group>"; };
+		C82ECCE2255BF28800FC342E /* MartVenue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MartVenue.entitlements; sourceTree = "<group>"; };
 		C8617C8C2554048D00AE8CFD /* MartVenue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MartVenue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8617C8F2554048D00AE8CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8617C912554048D00AE8CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +183,7 @@
 		C8617C8E2554048D00AE8CFD /* MartVenue */ = {
 			isa = PBXGroup;
 			children = (
+				C82ECCE2255BF28800FC342E /* MartVenue.entitlements */,
 				C8BEBFC82559AC41003012E7 /* SupportingFiles */,
 				C813A53A2557F25300B1EB30 /* TabbarRoot */,
 				C813A5202557EF9200B1EB30 /* TabBarViewControllers */,
@@ -553,6 +555,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MartVenue/MartVenue.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NU36J8PP2;
 				INFOPLIST_FILE = MartVenue/Info.plist;
@@ -560,7 +563,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kids.learn.bangbang.MartVenue;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testinggg.shuvo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -573,6 +576,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MartVenue/MartVenue.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4NU36J8PP2;
 				INFOPLIST_FILE = MartVenue/Info.plist;
@@ -580,7 +584,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kids.learn.bangbang.MartVenue;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testinggg.shuvo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

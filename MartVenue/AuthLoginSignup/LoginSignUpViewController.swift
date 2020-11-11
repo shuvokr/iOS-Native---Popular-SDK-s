@@ -8,14 +8,18 @@
 import UIKit
 import GoogleSignIn
 import FBSDKLoginKit
+import AuthenticationServices
 
 class LoginSignUpViewController: UIViewController {
+    
+    @IBOutlet weak var signInButtonStack: UIStackView!
     
     @IBOutlet weak var userIdView: UIView!
     @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var signupView: UIView!
     
+    @IBOutlet weak var appleSignInButtonView: UIView!
     @IBOutlet weak var signInButtonGoogle: UIButton!
     
     
@@ -35,6 +39,7 @@ class LoginSignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupView()
         setupGoogleLoginButton()
+        setUpSignInAppleButton()
         
         // Observe access token changes
         // This will trigger after successfully login / logout
@@ -121,4 +126,60 @@ extension LoginSignUpViewController {
     @objc private func userDidSignInGoogle(_ notification: Notification) {
         // Update screen after user successfully signed in
     }
+}
+
+// Apple sign in
+extension LoginSignUpViewController: ASAuthorizationControllerDelegate {
+    func setUpSignInAppleButton() {
+        let authorizationButton = ASAuthorizationAppleIDButton()
+        authorizationButton.addTarget(self, action: #selector(handleAppleIdRequest), for: .touchUpInside)
+        
+        authorizationButton.frame = appleSignInButtonView.frame
+        
+        appleSignInButtonView.addSubview(authorizationButton)
+        
+    }
+    
+    @objc func handleAppleIdRequest() {
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        
+//        appleIDProvider.getCredentialState(forUserID: userID) {  (credentialState, error) in
+//             switch credentialState {
+//                case .authorized:
+//                    print("Apple id: Authorized")
+//                    break
+//                case .revoked:
+//                    print("Apple id: revoked")
+//                    break
+//                case .notFound:
+//                    print("Apple id: not Found")
+//                default:
+//                    break
+//             }
+//        }
+        
+        let request = appleIDProvider.createRequest()
+        request.requestedScopes = [.fullName, .email]
+        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+        authorizationController.delegate = self
+        authorizationController.performRequests()
+    }
+    
+    // ASAuthorizationControllerDelegate delegets
+    
+    // apple signin successfull
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+            if let appleIDCredential = authorization.credential as?  ASAuthorizationAppleIDCredential {
+            let userIdentifier = appleIDCredential.user
+            let fullName = appleIDCredential.fullName
+            let email = appleIDCredential.email
+            print("User id is \(userIdentifier) \n Full Name is \(String(describing: fullName)) \n Email id is \(String(describing: email))")
+        }
+    }
+    
+    // apple sign in found error
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+        print(error)
+    }
+    
 }

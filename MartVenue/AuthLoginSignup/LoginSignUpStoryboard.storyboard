@@ -167,27 +167,34 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Mg-TI-lCf">
-                                <rect key="frame" x="40" y="628" width="334" height="80"/>
+                                <rect key="frame" x="40" y="584" width="334" height="124"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1c-6q-mQt">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1c-6q-mQt" userLabel="Apple">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="36"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="LpB-EK-iD2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQ0-aB-msf" userLabel="Facebook">
+                                        <rect key="frame" x="0.0" y="44" width="334" height="36"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEA-nL-ECR" customClass="FBSDKLoginButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phh-qP-ogT" customClass="FBSDKLoginButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="36"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="LpB-EK-iD2"/>
-                                            <constraint firstAttribute="bottom" secondItem="pEA-nL-ECR" secondAttribute="bottom" id="QS5-76-ptd"/>
-                                            <constraint firstAttribute="trailing" secondItem="pEA-nL-ECR" secondAttribute="trailing" id="boV-O1-Wxw"/>
-                                            <constraint firstItem="pEA-nL-ECR" firstAttribute="leading" secondItem="H1c-6q-mQt" secondAttribute="leading" id="cs2-Lk-fBG"/>
-                                            <constraint firstItem="pEA-nL-ECR" firstAttribute="top" secondItem="H1c-6q-mQt" secondAttribute="top" id="mgq-oy-fGZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Phh-qP-ogT" secondAttribute="trailing" id="FS8-Dm-a7v"/>
+                                            <constraint firstAttribute="height" constant="36" id="a3N-wh-kDz"/>
+                                            <constraint firstItem="Phh-qP-ogT" firstAttribute="top" secondItem="gQ0-aB-msf" secondAttribute="top" id="dHA-JQ-bzS"/>
+                                            <constraint firstAttribute="bottom" secondItem="Phh-qP-ogT" secondAttribute="bottom" id="iO4-cO-clk"/>
+                                            <constraint firstItem="Phh-qP-ogT" firstAttribute="leading" secondItem="gQ0-aB-msf" secondAttribute="leading" id="ux3-e0-OaA"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lk1-9y-hrE">
-                                        <rect key="frame" x="0.0" y="44" width="334" height="36"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lk1-9y-hrE" userLabel="Google">
+                                        <rect key="frame" x="0.0" y="88" width="334" height="36"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvH-fo-wwB">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="36"/>
@@ -206,7 +213,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nQ-3W-Bbr">
-                                <rect key="frame" x="198" y="592" width="18" height="16"/>
+                                <rect key="frame" x="198" y="548" width="18" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="Mfw-wH-wLP"/>
                                     <constraint firstAttribute="height" constant="16" id="YOv-lL-etx"/>
@@ -216,14 +223,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2K-8E-CPE" userLabel="LeftLine">
-                                <rect key="frame" x="40" y="599.66666666666663" width="150" height="1"/>
+                                <rect key="frame" x="40" y="555.66666666666663" width="150" height="1"/>
                                 <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="GTE-oG-KMc"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cur-bF-bZL" userLabel="RightLine">
-                                <rect key="frame" x="224" y="599.66666666666663" width="150" height="1"/>
+                                <rect key="frame" x="224" y="555.66666666666663" width="150" height="1"/>
                                 <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="ZM0-FR-CR9"/>
@@ -257,9 +264,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login Signup" id="3J8-A2-t0m"/>
                     <connections>
+                        <outlet property="appleSignInButtonView" destination="H1c-6q-mQt" id="SLc-32-5zb"/>
                         <outlet property="loginView" destination="2XS-l4-ayL" id="vIf-0k-hLA"/>
                         <outlet property="passwordView" destination="0xE-HH-OYD" id="dl6-RH-FWC"/>
                         <outlet property="signInButtonGoogle" destination="HvH-fo-wwB" id="w2z-Fk-iwp"/>
+                        <outlet property="signInButtonStack" destination="5Mg-TI-lCf" id="uO3-OT-jer"/>
                         <outlet property="signupView" destination="r7w-BD-w9a" id="8e4-L2-SUL"/>
                         <outlet property="userIdView" destination="xxa-uH-stF" id="pZD-kK-0xW"/>
                         <segue destination="zsP-F9-f3u" kind="presentation" identifier="segue_id_action_login_signup" modalPresentationStyle="fullScreen" id="b1A-Is-PW0"/>

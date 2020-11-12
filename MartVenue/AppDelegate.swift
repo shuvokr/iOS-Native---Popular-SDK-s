@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        print("didFinishLaunchingWithOptions")
+        
         IQKeyboardManager.shared.enable = true
         
         // Firebase
@@ -66,6 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // With swizzling disabled you must let Messaging know about the message, for Analytics
         // Messaging.messaging().appDidReceiveMessage(userInfo)
         // Print message ID.
+        print("didReceiveRemoteNotification")
         if let messageID = userInfo[gcmMessageIDKey] {
           print("Message ID: \(messageID)")
         }
@@ -82,6 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // With swizzling disabled you must let Messaging know about the message, for Analytics
         // Messaging.messaging().appDidReceiveMessage(userInfo)
         // Print message ID.
+        print("fetchCompletionHandler")
         if let messageID = userInfo[gcmMessageIDKey] {
           print("Message ID: \(messageID)")
         }
@@ -230,8 +234,9 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
 extension AppDelegate : MessagingDelegate {
     // [START refresh_token]
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        print("didReceiveRegistrationToken")
         print("Firebase registration token: \(String(describing: fcmToken))")
-    
+        
         let dataDict:[String: String] = ["token": fcmToken ?? ""]
         NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
         // TODO: If necessary send token to application server.
@@ -245,4 +250,5 @@ extension AppDelegate : MessagingDelegate {
  https://github.com/firebase/quickstart-ios/blob/4ed7de3c3b5b2b6933f2dcd503fa1bda5dd2a0fd/messaging/MessagingExampleSwift/AppDelegate.swift#L163-L170
  https://firebase.google.com/docs/cloud-messaging/ios/client
  https://www.appcoda.com/firebase-push-notifications/
+ WVEb6zNHqq96PY7ugDnw
  */
